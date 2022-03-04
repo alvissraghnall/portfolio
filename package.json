@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "My Portfolio App",
   "main": "server/index.js",
+  "scripts": {
+    "start": " nodemon server/index"
+  },
   "repository": "https://github.com/alvissraghnall/portfolio",
   "author": "Alviss Raghnall <isiomastewart@gmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
