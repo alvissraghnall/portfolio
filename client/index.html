@@ -6,26 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Álviss Raghnall's Portfolio</title>
   <link rel="stylesheet" href="public/css/style.css" type="text/css" media="all" />
+  <!-- <link rel="stylesheet" href="public/css/style.css" type="text/css" media="all" /> -->
+  <link rel="stylesheet" href="public/css/main.css" type="text/css" media="all" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet"> 
+  <!-- <script src="https://use.fontawesome.com/9b9355c9d1.js"></script> -->
+  <script src="https://use.fontawesome.com/9b9355c9d1.js"></script>
+  <!-- font-family: 'Sansita Swashed', cursive; -->
   <!-- ADD FONT AWESOME && GOOGLE FONTS -->
 </head>
 
-<body>
+<body class="dark home-body">
   <header>
-    <nav class="mobile-nav">
-      <p> Álviss Raghnall </p>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- Overlay content -->
-        <div class="overlay-content">
-          <a href="about">About</a>
-          <a href="projects">Projects</a>
-          <a href="articles">Articles</a>
-          <a href="contact-me">Contact Me</a>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7" style="justify-content: space-between;width: 100%;">
+            <!-- LOGO -->
+            <div>
+            <a href="#" class="flex items-center py-4 px-2">
+              <img src="public/assets/code-img.png" alt="" class="code-logo">
+              <span class="font-semibold text-gray-500 text-lg"
+								> Alviss Raghnall </span
+							>
+            </a>
+					</div>
+      <!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3">
+						<a
+							href="/"
+							class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold "
+							>Home</a
+						>
+						<a
+							href="projects"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Projects</a
+						>
+						<a
+							href="about"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>About</a
+						>
+						<a
+							href="contact-me"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Contact Me</a
+						>
+            <a
+							href="articles"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Articles</a
+						>
+					</div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-8 h-8 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+
+            </button>
+          </div>
         </div>
-      </div>
-      <span onclick="openNav()">open</span>
+			</div>
+      <!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="/" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+					<li><a href="projects" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Projects</a></li>
+					<li><a href="about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+					<li><a href="contact-me" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Me</a></li>
+					<li><a href="articles" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Articles</a></li>
+				</ul>
+			</div>
+		</div>
+      
+      <!-- </div>
+      <div class="mobile" onclick="openNav()">
+        <i class="fa fa-3x fa-bars nav-icon"></i>
+      </div> -->
     </nav>
   </header>
+
+  <section class="home-section">
+    <h1 class="text-dark-500 font-sans md:font-mono text-center text-4xl md:text-5xl lg:text-6xl font-bold p-6">
+      Hi, I'm Alviss! :) 
+
+    </h1>
+
+    <div class="rest-content">
+      <div class="font-serif text-dark-300 text-center text-2xl md:text-3xl lg:text-4xl font-semi-bold p-7 lg:pt-12">
+        And I build Web &amp; Blockchains Solutions
+      </div>
+      <div class="text-center font-mono text-dark-200 text-left p-10 lg:pt-16">
+        I am a Software Engineer from, and living in Port Harcourt, Nigeria. 
+        I design &amp; develop Web, as well as Blockchain Applications; mostly using Typescript &amp; Java.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="text-center flex justify-evenly pt-12 lg:pt-16 mx-8 pb-7">
+      <a href="https://github.com/alvissraghnall">
+        <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/comm/in/elijah-annie-stewart-456749214">
+        <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/AlvissRaghnall">
+        <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+      </a>
+      <a href="https://profile.codersrank.io/user/alvissraghnall" class="mt-3">
+        <img src="public/assets/codersrank.svg" alt="" height="50" width="45">
+      </a>
+      <!-- <a href="https://profile.codersrank.io/user/alvissraghnall">
+        <img src="https://img.shields.io/badge/--fff?style=for-the-badge&logo=codersrank" alt="">
+      </a> -->
+      
+    </div>
+  </footer>
   
   <script src="public/js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>

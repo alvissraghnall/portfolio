@@ -1,11 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background: gold;
+  /* background: gold; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .mobile-nav {
   display: flex;
   justify-content: space-between;
 }
+
+.home-section {
+  padding-top: 5.4em;
+}
+
+.home-body {
+  background-image: url("../assets/backg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  height: 100%;
+  /* overflow-y: hidden; */
+}
+
+.mobile .nav-icon {
+  /* margin-right: 8px; */
+  cursor: pointer;
+}
+
+.code-logo {
+  max-height: 4.4em;
+  max-width: 3.5em;
+}
+
 
 @media screen and (max-width: 500px) {
   .overlay {
@@ -41,6 +72,11 @@ body {
     /* 30px top margin to avoid conflict with the close button on smaller screens */
   }
 
+  .nav-icon {
+    color: purple;
+  }
+
+  
   /* The navigation links inside the overlay */
   .overlay a {
     padding: 8px;
@@ -78,5 +114,11 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+@media screen and (min-width: 978px) {
+  .mobile {
+    display: none;
   }
 }
