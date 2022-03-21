@@ -21,8 +21,17 @@ window.addEventListener("resize", () => {
   }
 });
 
-const moboLinks = document.querySelectorAll(".hover:bg-green-500.text-sm.px-2");
+// const moboLinks = document.querySelectorAll(".text-sm.px-2");
 
-moboLinks.addEventListener("hover", () => {
-  moboLinks.forEach(elem => elem.style.color = "#fff");
-});
+// moboLinks.addEventListener("hover", () => {
+//   moboLinks.forEach(elem => elem.style.color = "#fff");
+// });
+
+const langs = fetch("https://api.github.com/repos/alvissraghnall/mytop100movies/languages")
+  .then(res => res.json())
+  .catch(err => console.error(err));
+
+window.addEventListener("DOMContentLoaded", async function(ev) {
+  console.log(await langs);
+  console.log("xy");
+})
