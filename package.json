@@ -6,7 +6,8 @@
   "scripts": {
     "start": " nodemon server/index",
     "styles:bundle": "npx tailwindcss -i ./client/static/css/style.css -o ./client/static/css/main.css",
-    "styles:tw": "npx tailwindcss -i ./client/static/css/style.css -o ./client/static/css/main.css --watch"
+    "styles:tw": "npx tailwindcss -i ./client/static/css/style.css -o ./client/static/css/main.css --watch",
+    "build": "yarn run styles:bundle && yarn start"
   },
   "repository": "https://github.com/alvissraghnall/portfolio",
   "author": "Alviss Raghnall <isiomastewart@gmail.com>",
