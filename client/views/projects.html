@@ -72,11 +72,11 @@
           <!-- mobile menu -->
                 <div class="hidden mobile-menu">
                     <ul class="">
-                        <li><a href="/" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
-                        <li class="active"><a href="projects" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold ">Projects</a></li>
-                        <li><a href="about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-                        <li><a href="contact-me" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Me</a></li>
-                        <li><a href="articles" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Articles</a></li>
+                        <li><a href="/" class="block mobo-link text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                        <li class="active"><a href="projects" class="block mobo-link text-sm px-2 py-4 text-white bg-green-500 font-semibold ">Projects</a></li>
+                        <li><a href="about" class="block mobo-link text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+                        <li><a href="contact-me" class="block mobo-link text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Me</a></li>
+                        <li><a href="articles" class="block mobo-link text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Articles</a></li>
                     </ul>
                 </div>
             </div>
@@ -87,9 +87,83 @@
         <p class="text-7xl font-sans font-bold text-center text-uppercase">
             My Projects
         </p>
+        <div class="projects-wrapper mt-4 pt-5 flex justify-evenly mx-auto">
+            <div id="mt100m" class="p-6 max-w-md mb-4 w-1/2 mx-1 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> MyTop100Movies </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> A Project querying some postgresql database; storing, and and updating a user's top 100 movies (uses Authentication tokens) </p>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Typescript
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Javascript
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Sequelize
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Express
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    JWTs
+                </a>
+            </div>
+            <div id="typeorm-api" class="p-6 mb-4 max-w-md w-1/2 mx-1 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <a href="">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> User RESTful API </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> A RESTful API storing Users, and Transactions they performed built with Express, TypeORM && Typescript. </p>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Typescript
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    TypeORM
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    JWTs
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Express
+                </a>
+            </div>
+        </div>
+        <div class="projects-wrapper pt-5 flex justify-evenly mx-auto">
+            <div id="deriv-clone" class="p-6 mb-4 max-w-md w-1/2 mx-1 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Deriv Clone </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Clone of the popular FX Brokerage Web App, Deriv. </p>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Svelte
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    svelte-router-spa
+                </a>
+            </div>
+            <div id="recipe-app" class="p-6 mb-4 max-w-md w-1/2 mx-1 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Recipe App </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Recipe App with Login && Registration built with Vue. A live demo can be found <a class="hover:text-blue-500 transition duration-300" href="http://recipe-app.vercel.com"> here </a> </p>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Vue
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    BalmUI
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Vue-Router
+                </a>
+                <a class="inline-flex text-white items-center py-2 px-3 mb-2 text-sm font-medium text-center text-white bg-slate-600 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    vue-class-components
+                </a>
+            </div>
+        </div>
       </section>
 
       <script src="public/js/index.js"></script>
+      <script src="public/js/projects.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,14 @@
 .projects-section {
     padding-top: 4em;
 }
+
+@media screen and (max-width: 720px) {
+    .projects-wrapper {
+        flex-direction: column !important;
+    }    
+    div.max-w-md.mx-1.bg-white {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

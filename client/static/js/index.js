@@ -21,17 +21,22 @@ window.addEventListener("resize", () => {
   }
 });
 
-// const moboLinks = document.querySelectorAll(".text-sm.px-2");
+console.log("yhbhy");
+const moboLinks = document.querySelectorAll(".mobo-link");
+console.log("after");
 
-// moboLinks.addEventListener("hover", () => {
-//   moboLinks.forEach(elem => elem.style.color = "#fff");
-// });
+for (let index = 0; index < moboLinks.length; index++) {
+  moboLinks[index].addEventListener("mouseenter", () => {
+    console.log("before");
+    moboLinks[index].style.color = "#fff";
+    console.log("after");
+  })
 
-const langs = fetch("https://api.github.com/repos/alvissraghnall/mytop100movies/languages")
-  .then(res => res.json())
-  .catch(err => console.error(err));
-
-window.addEventListener("DOMContentLoaded", async function(ev) {
-  console.log(await langs);
-  console.log("xy");
-})
+  moboLinks[index].addEventListener("mouseleave", () => {
+    moboLinks[index].style.color = "#000";
+    if(moboLinks[index].parentElement.classList.contains("active")) {
+      moboLinks[index].style.color = "#fff";
+    }
+  })
+  
+}
