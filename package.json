@@ -4,7 +4,8 @@
   "description": "My Portfolio App",
   "main": "server/index.js",
   "scripts": {
-    "start": " nodemon server/index",
+    "trarts": " nodemon server/index",
+    "start": "node server/index",
     "styles:bundle": "npx tailwindcss -i ./client/static/css/style.css -o ./client/static/css/main.css",
     "styles:tw": "npx tailwindcss -i ./client/static/css/style.css -o ./client/static/css/main.css --watch",
     "build": "yarn run styles:bundle && yarn start"
